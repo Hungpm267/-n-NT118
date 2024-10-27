@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/anhnen"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="UIT-PHOMAI"
+            android:textColor="@color/mau_cho_logo"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttondangnhap"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:background="@drawable/custom_button"
+        android:paddingHorizontal="10dp"
+        android:text="Đăng nhập" />
+
+    <Button
+        android:id="@+id/buttondangki"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttondangnhap"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:background="@drawable/custom_button"
+        android:paddingHorizontal="10dp"
+        android:text="Đăng kí" />
+
+    <Button
+        android:id="@+id/buttondangnhapvoigg"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttondangki"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:paddingHorizontal="10dp"
+        android:drawableStart="@drawable/icgoogle"
+        android:background="@drawable/custom_button"
+        android:text="Đăng nhập với Google" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttondangnhapvoigg"
+        android:layout_marginTop="5dp"
+
+        android:layout_centerHorizontal="true"
+        android:text="@string/forgot_password"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:text="  Ngôn ngữ"
+        android:layout_marginLeft="10dp"
+        android:onClick="onClick"
+        android:drawableLeft="@drawable/languages"
+        />
+
+
+</RelativeLayout>

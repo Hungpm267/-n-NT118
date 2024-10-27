@@ -1,0 +1,15 @@
+<!-- res/drawable/rounded_corners.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Màu nền của LinearLayout -->
+    <solid android:color="#D2E2B1" /> <!-- Đổi #FFFFFF thành màu bạn muốn -->
+
+    <!-- Bo tròn chỉ ở 2 góc dưới -->
+    <corners
+        android:bottomLeftRadius="16dp"
+        android:bottomRightRadius="16dp" /> <!-- Điều chỉnh 16dp để thay đổi độ bo tròn -->
+
+    <!-- Độ dày và màu của viền (tùy chọn) -->
+    <stroke
+        android:width="5dp"
+        android:color="#D2E2B1" /> <!-- Đổi #CCCCCC thành màu viền bạn muốn -->
+</shape>
